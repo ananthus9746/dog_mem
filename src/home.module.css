@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe600;
+    height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.left_section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.right_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 88px;
+    font-weight: bold;
+    margin-bottom: -40px;
+    color: #000;
+}
+
+.subtitle {
+    font-size: 44px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.subtitle_two {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.buttons_container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+.button {
+    padding: 15px 30px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 300px;
+    box-shadow: 0px 10px 5px 0px rgb(0, 0, 0);
+    font-family: "Permanent Marker", cursive;
+}
+
+.button:hover {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.button_buy {
+    padding: 15px 30px;
+    background-color: #F26432;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 300px;
+    box-shadow: 0px 10px 5px 0px rgb(0, 0, 0);
+    font-family: "Permanent Marker", cursive;
+}
+
+.button_buy:hover {}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .left_section,
+    .right_section {
+        flex: none;
+        width: 100%;
+        padding: 0;
+    }
+
+    .title {
+        font-size: 48px;
+        margin-bottom: 0;
+    }
+
+    .subtitle {
+        font-size: 24px;
+    }
+
+    .subtitle_two {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .buttons_container {
+        gap: 20px;
+    }
+
+    .button,
+    .button_buy {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .button {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .subtitle_two {
+        font-size: 16px;
+    }
+
+    .button,
+    .button_buy {
+
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+}
